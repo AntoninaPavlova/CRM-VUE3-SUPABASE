@@ -34,7 +34,7 @@ const onClickCloseModal = () => {
       <!-- Modal footer -->
       <div class="crm-modal__footer">
         <button @click="onClickCloseModal" class="crm-modal__close-button">
-          <img class="crm-modal__close-icon" src="@/assets/img/close.png" alt="close" width="15" height="15" />
+          <img class="crm-modal__close-icon" src="/assets/img/close.png" alt="close" width="15" height="15" />
         </button>
       </div>
     </div>

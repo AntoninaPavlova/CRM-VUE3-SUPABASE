@@ -1,18 +1,18 @@
 export const departmentColumns = [
-  { label: 'Название департамента', field: 'name' },
-  { label: 'Описание', field: 'description' },
-  { label: 'Количество сотрудников', field: 'number' },
-  { label: 'Заведующий', field: 'head' },
+  { label: 'Название департамента', field: 'name', sortable: false },
+  { label: 'Описание', field: 'description', sortable: false },
+  { label: 'Количество сотрудников', field: 'number', sortable: false },
+  { label: 'Заведующий', field: 'head', sortable: false },
   { label: 'Действия', field: 'edit', sortable: false },
   { label: '', field: 'delete', sortable: false },
 ];
 
 export const employeeColumns = [
-  { label: 'Имя', field: 'firstName' },
-  { label: 'Фамилия', field: 'lastName' },
-  { label: 'Возраст', field: 'age' },
-  { label: 'Департамент', field: 'department' },
-  { label: 'Технологии', field: 'technologies' },
+  { label: 'Имя', field: 'firstName', sortable: false },
+  { label: 'Фамилия', field: 'lastName', sortable: false },
+  { label: 'Возраст', field: 'age', sortable: false },
+  { label: 'Департамент', field: 'department', sortable: false },
+  { label: 'Технологии', field: 'technologies', sortable: false },
   { label: 'Действия', field: 'edit', sortable: false },
   { label: '', field: 'delete', sortable: false },
 ];

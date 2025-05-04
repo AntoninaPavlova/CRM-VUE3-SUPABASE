@@ -16,7 +16,7 @@ import {
   saveEmployee,
 } from '/server/api/employees.js';
 
-import { messages } from '@/consts/messages.js';
+import { messages } from '@/consts/Messages.js';
 
 export const useAppStore = defineStore('app-store', {
   state: () => ({

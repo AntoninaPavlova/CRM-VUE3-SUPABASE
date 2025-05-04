@@ -36,23 +36,11 @@ export const useAppStore = defineStore('app-store', {
 
   actions: {
     async fetchDepartments() {
-      return fetchData(
-        fetchDepartments,
-        messages.departments.success,
-        messages.departments.error,
-        messages.departments.key,
-        this
-      );
+      return fetchData(fetchDepartments, messages.departments.error, messages.departments.key, this);
     },
 
     async fetchEmployees() {
-      return fetchData(
-        fetchEmployees,
-        messages.employees.success,
-        messages.employees.error,
-        messages.employees.key,
-        this
-      );
+      return fetchData(fetchEmployees, messages.employees.error, messages.employees.key, this);
     },
 
     async fetchDepartmentById(id) {

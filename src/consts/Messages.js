@@ -1,11 +1,9 @@
 export const messages = {
   departments: {
-    success: 'Данные департаментов успешно получены!',
     error: 'Ошибка при получении данных: департаментов',
     key: 'departments',
   },
   employees: {
-    success: 'Данные сотрудников успешно получены!',
     error: 'Ошибка при получении данных: сотрудников',
     key: 'employees',
   },

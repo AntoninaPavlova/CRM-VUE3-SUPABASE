@@ -1,0 +1,16 @@
+# Node modules
+/node_modules
+/server/node_modules
+
+# Build output
+/dist
+
+# Логи
+*.log
+
+# Операционные системы
+.DS_Store
+Thumbs.db
+
+# Другие файлы и папки, которые вы хотите игнорировать
+.env

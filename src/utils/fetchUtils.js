@@ -9,11 +9,10 @@ export async function fetchData(fetchFunction, errorMessage, storeKey, store) {
   }
 }
 
-export async function fetchDataById(fetchByIdFunction, id, successMessage, errorMessage, storeKey, store) {
+export async function fetchDataById(fetchByIdFunction, id, errorMessage, storeKey, store) {
   try {
     const data = await fetchByIdFunction(id);
     store[storeKey] = data;
-    showSuccessToast(successMessage);
   } catch (error) {
     showErrorToast(errorMessage);
   }

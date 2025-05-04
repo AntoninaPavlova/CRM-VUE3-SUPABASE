@@ -44,25 +44,11 @@ export const useAppStore = defineStore('app-store', {
     },
 
     async fetchDepartmentById(id) {
-      return fetchDataById(
-        fetchDepartmentById,
-        id,
-        messages.departmentById.success,
-        messages.departmentById.error,
-        messages.departmentById.key,
-        this
-      );
+      return fetchDataById(fetchDepartmentById, id, messages.departmentById.error, messages.departmentById.key, this);
     },
 
     async fetchEmployeeById(id) {
-      return fetchDataById(
-        fetchEmployeeById,
-        id,
-        messages.employeeById.success,
-        messages.employeeById.error,
-        messages.employeeById.key,
-        this
-      );
+      return fetchDataById(fetchEmployeeById, id, messages.employeeById.error, messages.employeeById.key, this);
     },
 
     async deleteDepartment(id) {

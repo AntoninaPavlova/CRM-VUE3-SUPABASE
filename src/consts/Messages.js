@@ -8,12 +8,10 @@ export const messages = {
     key: 'employees',
   },
   departmentById: {
-    success: 'Данные департамента успешно получены!',
     error: 'Ошибка при получении данных: департамента',
     key: 'openedDepartment',
   },
   employeeById: {
-    success: 'Данные сотрудника успешно получены!',
     error: 'Ошибка при получении данных: сотрудника',
     key: 'openedEmployee',
   },

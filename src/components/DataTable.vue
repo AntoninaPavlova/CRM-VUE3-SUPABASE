@@ -59,13 +59,13 @@ const getCellContent = (row, field) => {
           <Button
             v-if="props.column.field === 'edit'"
             @click.stop="onClickEdit(props.row)"
-            icon="@/assets/img/edit.png"
+            icon="/src/assets/img/edit.png"
           />
 
           <Button
             v-if="props.column.field === 'delete'"
             @click.stop="onClickDelete(props.row.id)"
-            icon="@/assets/img/delete.png"
+            icon="/src/assets/img/delete.png"
           />
 
           <div v-if="props.column.field === 'description'">

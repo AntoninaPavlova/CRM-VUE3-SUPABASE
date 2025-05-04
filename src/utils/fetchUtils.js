@@ -1,10 +1,9 @@
 import { showErrorToast, showSuccessToast } from '@/utils/toast.js';
 
-export async function fetchData(fetchFunction, successMessage, errorMessage, storeKey, store) {
+export async function fetchData(fetchFunction, errorMessage, storeKey, store) {
   try {
     const data = await fetchFunction();
     store[storeKey] = data.sort((a, b) => a.id - b.id);
-    showSuccessToast(successMessage);
   } catch (error) {
     showErrorToast(errorMessage);
   }
